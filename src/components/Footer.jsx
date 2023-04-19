@@ -16,7 +16,7 @@ const Div = styled.div`
   position: relative;
   background-color: teal;
   padding: 10px 40px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   overflow: hidden;
 `;
 
@@ -130,13 +130,7 @@ const Footer = () => {
     const currentYear = date.getFullYear();
     return currentYear;
   }
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setCurrentYear(getCurrentYear());
-  //   }, 1000);
 
-  //   return () => clearInterval(intervalId);
-  // }, []);
   return (
     <Div>
       <Section>

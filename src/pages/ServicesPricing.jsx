@@ -33,6 +33,7 @@ const Card = styled.div`
   border-radius: 10px;
   background-color: var(--card-color);
   padding: 10px;
+  box-shadow: 2px 2px 5px lightgray;
 `;
 const Icon = styled.div`
   height: 40px;

@@ -16,16 +16,17 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Instruments, features } from "../data";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 const Body = styled.div``;
 const Navwrapper = styled.div`
+  position: relative;
   height: 350px;
   width: 100%;
-  background-image: url(${studio});
-  background-size: cover;
-  background-position: center;
   border-radius: 0px 0px 30px 30px;
   overflow: hidden;
-  position: relative;
   @media screen and (min-width: 300px) and (max-width: 926px) {
     height: 400px;
   }
@@ -36,6 +37,7 @@ const Overlay = styled.div`
   width: 100%;
   position: absolute;
   top: 0px;
+  z-index: 4;
 `;
 const MottoContainer = styled.div`
   margin-top: 100px;
@@ -113,6 +115,7 @@ const Elevate = styled.div`
 `;
 const LesssonsSection = styled.div`
   padding: 0px 80px;
+  background-color: #f8f4e8;
   @media screen and (min-width: 300px) and (max-width: 926px) {
     padding: 0px 20px;
   }
@@ -217,15 +220,13 @@ const Waves = styled.div`
 const WhyUsSection = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* height: 600px; */
+  background-color: #f8f4e8;
   place-items: center;
   gap: 20px;
   padding: 0px 40px;
   @media screen and (min-width: 300px) and (max-width: 926px) {
     display: flex;
     flex-direction: column;
-    /* width: max-content; */
-    /* overflow: scroll; */
   }
 `;
 
@@ -234,6 +235,8 @@ const Why = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 24px;
+  background-color: #f8f4e8;
+
   color: teal;
   font-weight: 700;
   padding: 10px;
@@ -303,6 +306,7 @@ const TeamSection = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0px 40px;
+  background-color: #f8f4e8;
   @media screen and (min-width: 300px) and (max-width: 926px) {
     display: flex;
     padding: 0px 20px;
@@ -377,7 +381,8 @@ const TeamDescription = styled.div`
 const Amenities = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0px 40px;
+  padding: 20px 40px;
+  background-color: #f8f4e8;
   @media screen and (min-width: 300px) and (max-width: 926px) {
     overflow-x: scroll;
     position: relative;
@@ -448,11 +453,22 @@ const Amenitiesdesc = styled.div`
   text-align: center;
   padding: 0px 30px;
 `;
+const ImageContainer = styled.img`
+  position: fixed;
+  width: 100%;
+  max-width: 1366px;
+  height: 350px;
+  border-radius: 0px 0px 30px 30px;
+  top: 0px;
+  object-fit: cover;
+  z-index: -1;
+`;
 
 const Home = () => {
   return (
     <Body>
       <Navwrapper>
+        <ImageContainer src={studio} alt="image" />
         <Overlay>
           <Navbar type="home" />
           <MottoContainer>

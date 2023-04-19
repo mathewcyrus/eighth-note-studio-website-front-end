@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
 import Sessions from "./pages/Sessions";
-
 import Coursecard from "./components/Coursecard";
 import Certificate from "./components/Certificate";
 import CourseOverview from "./pages/CourseOverview";
