@@ -2,13 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
-import video from "../Videos/video.mp4";
 const Body = styled.div`
   display: flex;
   position: relative;
   padding: 0px 40px;
-  /* align-items: center; */
-  /* justify-content: center; */
   margin-top: 70px;
 `;
 const Sidebar = styled.div`

@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import styled from "styled-components";
-import guitar from "../images/guitar.jpg";
 import CourseModule from "../components/CourseModule";
 import Footer from "../components/Footer";
 
