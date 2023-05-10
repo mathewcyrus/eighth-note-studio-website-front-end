@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../images/logo.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import LoginIcon from "@mui/icons-material/Login";
