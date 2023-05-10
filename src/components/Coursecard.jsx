@@ -73,11 +73,17 @@ const BuyCourse = styled.button`
 const Coursecard = ({ type }) => {
   return (
     <Div>
-      <Image src={piano} alt="instrument image" />
+      <Image
+        src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Frashid-OihZAyTkj14-unsplash.jpg?alt=media&token=d4dbc57b-eb0d-40c3-9e01-779f9cc2a09b"
+        alt="instrument image"
+      />
       <Container>
         <Title>Guitar Master Track</Title>
         <Instructor>
-          <InstructorImg src={grace} alt="instructor image" />
+          <InstructorImg
+            src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Faiony-haust-3TLl_97HNJo-unsplash.jpg?alt=media&token=39bb3308-2fdb-4684-ae45-fd8cf92a283c"
+            alt="instructor image"
+          />
           <InstructorDesc>
             <Instructorname>Mathew Cyrus</Instructorname>
             <Cinstructor>course instructor</Cinstructor>

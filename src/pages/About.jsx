@@ -2,13 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import guitar from "../images/guitar.jpg";
-import mic from "../images/mic.jpg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import tracy from "../images/tracychapman.jpg";
-import person2 from "../images/jurica.jpg";
-import person3 from "../images/micheal.jpg";
-import manager from "../images/aiony.jpg";
 import { Person, Phone } from "@mui/icons-material";
 const Div = styled.div`
   max-width: 1366px;
@@ -98,7 +92,7 @@ const Submenu = styled.ul`
   background-color: teal;
   height: 30px;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 10px;
   align-items: center;
   justify-content: center;
   color: whitesmoke;
@@ -362,11 +356,14 @@ const About = () => {
         <LeftSection>
           <Title>EighthNote Studios</Title>
           <p>
-            Our photobooth is a professional grade equipment thta is perfect for
-            capturing stunning images of you or your band. We have a avariety of
-            backgrounds and lightings setup to choose from, and out=r team of
-            proffesional photographers will help you get the perfect shots for
-            your website, social media and album covers
+            Welcome to our music studio, where creativity, community, and
+            innovation come together to ignite your passion for music. Whether
+            you're a beginner or a seasoned musician, we offer a range of
+            exceptional education, production, and resources to help you unlock
+            your musical potential and achieve your goals. From world-class
+            lessons to state-of-the-art recording and performance facilities, we
+            have everything you need to create, connect, and make your mark on
+            the world of music!
           </p>
           <Submenu>
             <a
@@ -403,8 +400,14 @@ const About = () => {
         </LeftSection>
         <RightSection>
           <Circle />
-          <Image src={mic} />
-          <Image2 src={guitar} />
+          <Image
+            src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fjonathan-velasquez-c1ZN57GfDB0-unsplash.jpg?alt=media&token=cbb211fd-a6de-4841-b9d8-b6873c59bc4b"
+            alt="image"
+          />
+          <Image2
+            src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fde-an-sun-b57RqS-nQ1c-unsplash.jpg?alt=media&token=a3759d1e-c312-4f9a-831f-88312475f732"
+            alt="image"
+          />
           <Container>
             <span>unleash your potential</span>
             <div>
@@ -420,7 +423,10 @@ const About = () => {
       <Founders id="founders">
         <FContainer>
           <Fcircle />
-          <FImage src={tracy} />
+          <FImage
+            src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fjanko-ferlic-GWFffQS5eWU-unsplash.jpg?alt=media&token=4f8fc075-3523-438a-8c8c-81a67e218caf"
+            alt="founders image"
+          />
           <Fwords>
             Good quality music means the world to me. I want to be the best in
             its production
@@ -446,23 +452,34 @@ const About = () => {
         <MissionCont>
           <h2>Mission</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            debitis possimus quibusdam totam nemo dolore illo rem assumenda
-            magni nisi, ex accusamus doloremque praesentium iusto ad, dicta,
-            suscipit optio similique? Animi tenetur dolores sit debitis,
-            excepturi cupiditate consectetur ducimus? Dolor alias beatae velit
-            veritatis aliquid labore animi porro exercitationem. Necessitatibus.
+            Our mission is to inspire and empower musicians of all levels to
+            create, perform, and connect through music. We believe that music is
+            a universal language that has the power to bring people together,
+            express emotions, and spark positive change in the world. That's why
+            we are committed to providing exceptional education, production, and
+            resources to help our students and clients unlock their creative
+            potential and achieve their musical goals. From learning an
+            instrument, to recording an album, to performing on stage, we are
+            dedicated to supporting our community of artists and learners every
+            step of the way.
           </p>
         </MissionCont>
         <MissionCont>
           <h2> Vision</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-            magni est, veniam architecto expedita deleniti! Aut veritatis
-            similique repellendus dolorum ipsam odio accusantium nobis culpa
-            repudiandae eum, totam ducimus officiis at minima nisi ea illo harum
-            molestiae aspernatur quo iure praesentium! Tempore ea deleniti
-            beatae animi dicta assumenda, rem deserunt!
+            Our vision is to be the leading music studio that nurtures
+            creativity and innovation, and drives positive change in the world
+            through music. We believe that music has the power to connect
+            people, inspire change, and bring joy and meaning to life. That's
+            why we strive to create a supportive and inclusive community of
+            artists and learners, where everyone feels welcome to explore and
+            express their musical talents and interests. We envision a world
+            where music is celebrated as a vital part of human culture and
+            identity, and where our studio plays a key role in fostering this
+            appreciation and understanding. To achieve this vision, we are
+            committed to providing exceptional education, production, and
+            resources that inspire our community to create, perform, and connect
+            through music.
           </p>
         </MissionCont>
       </Mission>
@@ -470,7 +487,10 @@ const About = () => {
         <h2>Management</h2>
         <McardWrapper>
           <MCard>
-            <MImage src={manager} />
+            <MImage
+              src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fjurica-koletic-7YVZYZeITc8-unsplash.jpg?alt=media&token=7fda508c-7c18-432b-ae19-6827e7a4f973"
+              alt="image"
+            />
             <MContainer>
               <MTitle>Manager</MTitle>
               <MDescrption>
@@ -482,7 +502,10 @@ const About = () => {
             </MContainer>
           </MCard>
           <MCard>
-            <MImage src={person2} />
+            <MImage
+              src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Faiony-haust-3TLl_97HNJo-unsplash.jpg?alt=media&token=39bb3308-2fdb-4684-ae45-fd8cf92a283c"
+              alt="image"
+            />
             <MContainer>
               <MTitle>Front Desk</MTitle>
               <MDescrption>
@@ -494,7 +517,10 @@ const About = () => {
             </MContainer>
           </MCard>
           <MCard>
-            <MImage src={person3} />
+            <MImage
+              src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fmichael-dam-mEZ3PoFGs_k-unsplash.jpg?alt=media&token=c63f5e59-dfed-4836-8e10-3028a85eedfd"
+              alt="image"
+            />
             <MContainer>
               <MTitle>Human Resource</MTitle>
               <MDescrption>

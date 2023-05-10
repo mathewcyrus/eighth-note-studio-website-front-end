@@ -131,7 +131,10 @@ const CourseOverview = () => {
       </Navigation>
       <CourseWrapper>
         <Overview>
-          <Image src={guitar} />
+          <Image
+            src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fde-an-sun-b57RqS-nQ1c-unsplash.jpg?alt=media&token=a3759d1e-c312-4f9a-831f-88312475f732"
+            alt="image"
+          />
           <Coursename>Guitar Master Track</Coursename>
           <Description>
             KickStart your career in guitart playing by enrolling in this master

@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import studio from "../images/studio.jpg";
-import logo from "../images/logo.jpg";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -10,13 +8,12 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import SendIcon from "@mui/icons-material/Send";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 const Div = styled.div`
   height: 340px;
   position: relative;
   background-color: teal;
   padding: 10px 40px;
-  /* margin-top: 20px; */
   overflow: hidden;
 `;
 
@@ -238,7 +235,10 @@ const Footer = () => {
         <span> Unleash &middot; Rediscover &middot; Inspire</span>
       </STitle>
 
-      <Image src={studio} />
+      <Image
+        src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fcaught-in-joy-ptVBlniJi50-unsplash.jpg?alt=media&token=b9b097f3-097b-46c7-b522-3f5bfd62de75"
+        alt="image"
+      />
       <Terms>
         <span>Terms and conditions</span>
         <span>cookies</span>

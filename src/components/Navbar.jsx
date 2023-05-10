@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../images/logo.jpg";
+import logo from "../images/logo.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import LoginIcon from "@mui/icons-material/Login";
@@ -54,8 +54,6 @@ const Logo = styled.div`
 const Span = styled.div`
   height: 70px;
   width: 50px;
-  mix-blend-mode: exclusion;
-  background-blend-mode: exclusion;
   margin: 0px 8px;
   animation: ${(props) =>
     props.type ? "session" && "none" : "rotate 3s linear infinite"};

@@ -1,12 +1,3 @@
-import drums from "../src/images/drums.jpg";
-import guitar from "../src/images/guitar.jpg";
-import sax from "../src/images/sax.jpg";
-import violin from "../src/images/violin.jpg";
-import record from "../src/images/record.jpg";
-import mic from "../src/images/mic.jpg";
-import lesson from "../src/images/lessons.jpg";
-import video from "../src/images/video.jpg";
-
 import PublicIcon from "@mui/icons-material/Public";
 import MovieCreationIcon from "@mui/icons-material/MovieCreation";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
@@ -18,28 +9,32 @@ import SchoolIcon from "@mui/icons-material/School";
 
 export const Instruments = [
   {
-    image: guitar,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fde-an-sun-b57RqS-nQ1c-unsplash.jpg?alt=media&token=a3759d1e-c312-4f9a-831f-88312475f732",
     instrument: "Guitar",
     instructor: "mathew Cyrus",
     time: "6 months program",
     pricing: "10000 ksh per month",
   },
   {
-    image: violin,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fphilip-myrtorp-TeqVvTX8qKA-unsplash.jpg?alt=media&token=0d9238f7-204b-4c0a-b43c-0b55e76822b2",
     instrument: "Violin",
     instructor: "James White",
     time: "6 months program",
     pricing: "10000 ksh per month",
   },
   {
-    image: sax,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Freno-laithienne-MGfDE60G0-M-unsplash.jpg?alt=media&token=420d097a-b4fa-4c67-8828-e79470f612d1",
     instrument: "Saxophone",
     instructor: "Joe Heathers",
     time: "6 months program",
     pricing: "10000 ksh per month",
   },
   {
-    image: drums,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fasba-drums-CLKiyzlZ274-unsplash.jpg?alt=media&token=b2d65322-908d-40b6-9d33-73041367df9b",
     instrument: "Drums",
     instructor: "mathew Cyrus",
     time: "6 months program",
@@ -49,37 +44,43 @@ export const Instruments = [
 export const features = [
   {
     name: "Recording Area",
-    image: record,
+    image:
+      "https://res.cloudinary.com/dt75zlucp/image/upload/v1681891097/Arcade%20Hotel/slide-studio4_i7nvrn.jpg",
     description:
       "Our recording area is a state of the art facility, equipped wit the latest technology and equipments. We have a variety ofrecording spaces, including a live room, control room and isolation booths to accomodate all types of projects. Our  engineers work closely with pour clients to ensure that each recording is of the highest quality.",
   },
   {
     name: "Photo Booth",
-    image: mic,
+    image:
+      "https://res.cloudinary.com/dt75zlucp/image/upload/v1681891134/Arcade%20Hotel/arluah-wontan-AElf4UzScSs-unsplash_tmrmth.jpg",
     description:
       "Our photobooth is a professional grade equipment thta is perfect for capturing stunning images of you or your band. We have a avariety of backgrounds and lightings setup to choose from, and out=r team of proffesional photographers will help you get the perfect shots for your website, social media and album covers",
   },
   {
     name: "Lessons room",
-    image: video,
+    image:
+      "https://res.cloudinary.com/dt75zlucp/image/upload/v1681891090/Arcade%20Hotel/sigmund-QbCGUxaa4So-unsplash_ltj7l8.jpg",
     description:
       " Our music lessons rooms are designed to provide the perfect enviroment for learning. Each room is equipped with high quality instruments and equipments and our experienced teachers will help you achieve your goals, wg=hether you are a begginer or a professional musician",
   },
   {
     name: "Lounge Area",
-    image: lesson,
+    image:
+      "https://res.cloudinary.com/dt75zlucp/image/upload/v1681891137/Arcade%20Hotel/ralph-ravi-kayden-zSG-kd-L6vw-unsplash_ropne9.jpg",
     description:
       " Our lounge area is the poerfect place to relax and unwind after s long day of recording or lessons. it is equipped with comforttable seating, a TV and a avariety of refreshments so you can take a break and recharge.",
   },
   {
     name: "Sound Proof Rooms",
-    image: guitar,
+    image:
+      "https://res.cloudinary.com/dt75zlucp/image/upload/v1681891134/Arcade%20Hotel/uneebo-office-design-6182SnH84II-unsplash_rxiu0c.jpg",
     description:
       " Our studio is sound proofed to emsure that recordings are of the highest quality and that there is no outside noise interference. Our soundproofing is specifically designed to provide an optimal recording enviroment and to reduce sound leakage",
   },
   {
     name: "Control Room",
-    image: sax,
+    image:
+      "https://res.cloudinary.com/dt75zlucp/image/upload/v1681891150/Arcade%20Hotel/adrian-hernandez-UZFlMWqdqHg-unsplash_pu2fcf.jpg",
     description:
       " Our control room is where all ther magic happens. It is equipped with the latest technology and equipment, including a mixing console, audio interfaces and producers work closely with clients in the control room to ensure recording is of the highest quality.",
   },

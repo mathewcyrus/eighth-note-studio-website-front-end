@@ -164,7 +164,12 @@ const CourseContent = () => {
         <MainContent>
           <ModuleTitle>Introduction to chords in the key of C</ModuleTitle>
           <VideoContainer>
-            <Video src={video} controls />
+            <Video
+              src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2F254796459455_status_a9b2c06c88374499961eb1699808b31d.mp4?alt=media&token=a9156e6a-14c2-4e52-8df9-f0adbf530473"
+              controls
+              width={600}
+              height={350}
+            />
           </VideoContainer>
           <Captions>
             <h3>Captions</h3>

@@ -1,24 +1,10 @@
 import Navbar from "../components/Navbar";
 import styled from "styled-components";
-import studio from "../images/studio.jpg";
 import Instrument from "../components/Instrument";
-import mic from "../images/mic.jpg";
-import violin from "../images/violin.jpg";
-import video1 from "../Videos/video.mp4";
-
-import lesson from "../images/lessons.jpg";
-import video from "../images/video.jpg";
-import sax from "../images/sax.jpg";
-
-import audioengineer from "../images/audioenginner.jpg";
-import record from "../images/record.jpg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Instruments, features } from "../data";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Body = styled.div``;
 const Navwrapper = styled.div`
@@ -452,6 +438,7 @@ const AmenityTitle = styled.div`
 const Amenitiesdesc = styled.div`
   text-align: center;
   padding: 0px 30px;
+  font-size: 14px;
 `;
 const ImageContainer = styled.img`
   position: fixed;
@@ -468,7 +455,10 @@ const Home = () => {
   return (
     <Body>
       <Navwrapper>
-        <ImageContainer src={studio} alt="image" />
+        <ImageContainer
+          src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fcaught-in-joy-ptVBlniJi50-unsplash.jpg?alt=media&token=b9b097f3-097b-46c7-b522-3f5bfd62de75"
+          alt="eighth note studio image"
+        />
         <Overlay>
           <Navbar type="home" />
           <MottoContainer>
@@ -514,7 +504,10 @@ const Home = () => {
       <WhyUsSection>
         <WhyCard>
           <WhyImg>
-            <Image src={mic} />
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fjonathan-velasquez-c1ZN57GfDB0-unsplash.jpg?alt=media&token=cbb211fd-a6de-4841-b9d8-b6873c59bc4b"
+              alt="image"
+            />
           </WhyImg>
           <WhyTitle> Music Production</WhyTitle>
           <WhyDesc>
@@ -526,7 +519,10 @@ const Home = () => {
         </WhyCard>
         <WhyCard>
           <WhyImg>
-            <video src={video1} muted autoPlay width="100%" height="160" />
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fben-collins-bolwBzASJ5c-unsplash.jpg?alt=media&token=da240d2b-7b6c-4256-9c7c-b67a264c167a"
+              alt="image"
+            />
           </WhyImg>
           <WhyTitle> Video Production</WhyTitle>
           <WhyDesc>
@@ -538,7 +534,10 @@ const Home = () => {
         </WhyCard>
         <WhyCard>
           <WhyImg>
-            <Image src={lesson} />
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fbruno-justo-pego-HeWRZ5-5Kt0-unsplash.jpg?alt=media&token=9bb1eb26-19f7-45a3-aca9-72fd48fb8de7"
+              alt="image"
+            />
           </WhyImg>
           <WhyTitle> Music Lessons</WhyTitle>
           <WhyDesc>
@@ -550,7 +549,10 @@ const Home = () => {
         </WhyCard>
         <WhyCard>
           <WhyImg>
-            <Image src={video} />
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fcaught-in-joy-PukZSAi_K5o-unsplash.jpg?alt=media&token=17d54ac2-65e8-4d34-a954-6c74d1f351d4"
+              alt="image"
+            />
           </WhyImg>
           <WhyTitle> Photography</WhyTitle>
           <WhyDesc>
@@ -571,62 +573,73 @@ const Home = () => {
         <CardWrapper>
           <Teamcard>
             <TeamPhoto>
-              <Image src={audioengineer} />
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fistockphoto-1451145157-170667a.jpg?alt=media&token=3a46f81c-c5a2-4b35-9870-82cbe7979a70"
+                alt="image"
+              />
             </TeamPhoto>
             <TeamWrapper>
               <TeamName>Music Production Team</TeamName>
               <TeamDescription>
-                Our music production team is led by a talented producer named
-                Mercy. She is supported by a group mof dedicated and skilled
-                engineers who work together to create a top notch music
-                production servie for all genres and styles. They are passionate
-                about music and have a great ear for details.
+                Our music production team consists of experienced producers and
+                engineers who are dedicated to helping you achieve your artistic
+                vision. From recording to mixing and mastering, our team has the
+                skills and expertise to make your music sound great.
               </TeamDescription>
             </TeamWrapper>
           </Teamcard>
 
           <Teamcard>
             <TeamPhoto>
-              <Image src={sax} />
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fadrianna-geo-RL4YWCilguk-unsplash.jpg?alt=media&token=cb5dfde8-f762-473a-b29c-0f3063ea3c3f"
+                alt="image"
+              />
             </TeamPhoto>
             <TeamWrapper>
-              <TeamName>Music Production Team</TeamName>
+              <TeamName>Video Production Team</TeamName>
               <TeamDescription>
-                Our music production team is led by a talented producer named
-                Mercy. She is supported by a group mof dedicated and skilled
-                engineers who work together to create a top notch music
-                production servie for all genres and styles. They are passionate
-                about music and have a great ear for details.
+                Our video production team is here to help you create stunning
+                visuals for your music. Whether you need a music video,
+                promotional content, or live performance footage, our team has
+                the creativity and technical know-how to bring your ideas to
+                life.
               </TeamDescription>
             </TeamWrapper>
           </Teamcard>
           <Teamcard>
             <TeamPhoto>
-              <Image src={violin} />
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Farluah-wontan-AElf4UzScSs-unsplash.jpg?alt=media&token=9bc20c9c-a2f5-46a3-91dd-40301fdb9edd"
+                alt="image"
+              />
             </TeamPhoto>
             <TeamWrapper>
-              <TeamName>Music Production Team</TeamName>
+              <TeamName>Photoshoot Team</TeamName>
               <TeamDescription>
-                Our music production team is led by a talented producer named
-                Mercy. She is supported by a group mof dedicated and skilled
-                engineers who work together to create a top notch music
-                production servie for all genres and styles. They are passionate
-                about music and have a great ear for details.
+                Our photoshoot team is all about capturing the essence of your
+                music in stunning visuals. With a keen eye for detail and a
+                passion for creative expression, our team will work with you to
+                create memorable and striking imagery that showcases your unique
+                style.
               </TeamDescription>
             </TeamWrapper>
           </Teamcard>
           <Teamcard>
             <TeamPhoto>
-              <Image src={record} />
+              <Image
+                src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Farluah-wontan-AElf4UzScSs-unsplash.jpg?alt=media&token=9bc20c9c-a2f5-46a3-91dd-40301fdb9edd"
+                alt="image"
+              />
             </TeamPhoto>
             <TeamWrapper>
-              <TeamName>Music Production Team</TeamName>
+              <TeamName>Music Lessons Team</TeamName>
               <TeamDescription>
-                Our music production team is led by a talented producer named
-                Mercy. She is supported by a group mof dedicated and skilled
-                engineers who work together to create a top notch music
-                production servie for all genres and styles. They are passionate
-                about music and have a great ear for details.
+                Our music lessons team is made up of experienced and passionate
+                educators who are dedicated to helping you develop your skills
+                and reach your musical goals. From beginner to advanced, our
+                team offers a wide range of lessons in a variety of instruments
+                and styles, all tailored to your individual needs and interests.
               </TeamDescription>
             </TeamWrapper>
           </Teamcard>
@@ -635,10 +648,10 @@ const Home = () => {
       <Amenities>
         <AmenitiesTitle>Explore our beautiful facilities</AmenitiesTitle>
         <AmenityWrapper>
-          {features.map((feature) => (
-            <AmenityCard>
+          {features.map((feature, i) => (
+            <AmenityCard key={i}>
               <AmenitiesImage>
-                <Image src={feature.image} />
+                <Image loading="lazy" src={feature.image} />
               </AmenitiesImage>
               <DescWrapper className="overlay">
                 <AmenityTitle>{feature.name}</AmenityTitle>
