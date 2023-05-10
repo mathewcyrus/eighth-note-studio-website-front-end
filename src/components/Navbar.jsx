@@ -129,7 +129,10 @@ const Navbar = ({ type }) => {
       <Logo>
         Eighth N
         <Span>
-          <Image src={logo} />
+          <Image
+            src="https://firebasestorage.googleapis.com/v0/b/portifolio-mathews.appspot.com/o/note_studios%2Fistockphoto-1398510446-170667a-removebg-preview.png?alt=media&token=326ba130-80e9-4924-889e-ceb972ae3d9f"
+            alt="logo image"
+          />
         </Span>
         te Studios
       </Logo>
