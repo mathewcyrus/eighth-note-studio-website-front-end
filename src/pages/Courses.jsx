@@ -4,7 +4,6 @@ import Sidebar from "../components/Sidebar";
 
 import styled from "styled-components";
 import { Outlet } from "react-router-dom";
-// import Coursecard from "../components/Coursecard";
 const Div = styled.div`
   max-width: 1366px;
 `;

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import grace from "../images/gracios.jpg";
-import piano from "../images/piano.jpg";
 const Div = styled.div`
   height: 430px;
   width: 300px;
